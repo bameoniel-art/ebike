@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoodcronics| Power Up Your Daily Commute - Electric Bikes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-black text-white text-xs font-medium py-2.5 px-4 text-center tracking-wide">
+        ⚡ Free & Fast 3-12 Days Shipping | 1-Year Comprehensive Warranty | 30-Day Easy Returns
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <div class="flex items-center gap-2">
+                <a href="#" class="text-2xl font-black tracking-tighter uppercase text-black flex items-center gap-1.5">
+                    <i class="fa-solid fa-bolt text-amber-500"></i> LAGADS<span class="text-amber-500">RIDER</span>
+                </a>
+            </div>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-sm tracking-wide">
+                <a href="#" class="text-amber-600 hover:text-amber-600 transition">Home</a>
+                <a href="#products" class="text-gray-700 hover:text-amber-600 transition">E-Bikes</a>
+                <a href="#scooters" class="text-gray-700 hover:text-amber-600 transition">Scooters</a>
+                <a href="#features" class="text-gray-700 hover:text-amber-600 transition">Why Us</a>
+                <a href="#contact" class="text-gray-700 hover:text-amber-600 transition">Support</a>
+            </nav>
+
+            <!-- Actions / Cart -->
+            <div class="flex items-center gap-4">
+                <button onclick="toggleCart()" class="relative bg-gray-100 hover:bg-gray-200 p-2.5 rounded-full transition flex items-center justify-center w-10 h-10 cursor-pointer">
+                    <i class="fa-solid fa-bag-shopping text-gray-800"></i>
+                    <span id="cart-badge" class="absolute -top-1 -right-1 bg-amber-500 text-white text-[10px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-xs">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?q=80&w=1920&auto=format&fit=crop" alt="Hero Background Electric Bike" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent z-10"></div>
+        
+        <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36 lg:py-44">
+            <div class="max-w-2xl">
+                <span class="bg-amber-500/20 text-amber-400 border border-amber-500/30 text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full inline-block mb-6">
+                    New 2026 Commuter Series
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none mb-6">
+                    Power Up Your <span class="text-amber-400">Daily Commute</span>
+                </h1>
+                <p class="text-lg text-gray-300 font-normal mb-8 leading-relaxed">
+                    Explore high-performance electric bikes built with heavy-duty motors, long-range batteries, and dual hydraulic suspension for ultimate city & off-road cruising.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#products" class="bg-amber-500 hover:bg-amber-400 text-black font-extrabold px-8 py-4 rounded-xl transition shadow-lg tracking-wide uppercase text-sm">
+                        Shop Collection
+                    </a>
+                    <a href="#features" class="border border-white/30 hover:bg-white/10 text-white font-bold px-8 py-4 rounded-xl transition tracking-wide uppercase text-sm">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="bg-gray-50 border-b border-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">Fast & Free Shipping</h4>
+                        <p class="text-sm text-gray-600">3-12 Days delivery from local warehouses.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">1-Year Warranty</h4>
+                        <p class="text-sm text-gray-600">Comprehensive warranty & parts coverage.</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 justify-center md:justify-start">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900">30-Day Easy Returns</h4>
+                        <p class="text-sm text-gray-600">Hassle-free return policy guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="products" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-4">FEATURED E-BIKES</h2>
+            <p class="text-gray-600">Engineered for absolute power, long-range endurance, and maximum safety.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Product 1 -->
+            <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-gray-100 aspect-4/3 overflow-hidden">
+                        <span class="absolute top-3 left-3 z-10 bg-black text-amber-400 text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Save $200</span>
+                        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=800&auto=format&fit=crop" alt="LAGADS V20pro" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Commuter / Off-Road</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-1 mb-2">LAGADS V20pro Electric Bike</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">750W Motor, 48V 18.2Ah Battery, 55KM+ Range, Dual Hydraulic Suspension & Fat Tires.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">750W Motor</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">48V 18.2Ah</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">Hydraulic Brakes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-xs text-gray-400 line-through block">$1,799.00</span>
+                        <span class="text-xl font-black text-gray-900">$1,599.00</span>
+                    </div>
+                    <button onclick="addToCart('LAGADS V20pro Electric Bike', 1599)" class="bg-black hover:bg-amber-500 hover:text-black text-white font-bold px-5 py-3 rounded-xl transition text-sm cursor-pointer">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-gray-100 aspect-4/3 overflow-hidden">
+                        <span class="absolute top-3 left-3 z-10 bg-amber-500 text-black text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Best Seller</span>
+                        <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?q=80&w=800&auto=format&fit=crop" alt="LAGADS D50" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Heavy Duty Power</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-1 mb-2">LAGADS D50 Electric Commuter</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">1000W High Speed Motor, Dual Shock Absorption, Widened 20-inch Fat Tires & Smart LED Screen.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">1000W Motor</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">Dual Suspension</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">Fat Tires</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-xs text-gray-400 line-through block">$1,999.00</span>
+                        <span class="text-xl font-black text-gray-900">$1,899.00</span>
+                    </div>
+                    <button onclick="addToCart('LAGADS D50 Electric Commuter', 1899)" class="bg-black hover:bg-amber-500 hover:text-black text-white font-bold px-5 py-3 rounded-xl transition text-sm cursor-pointer">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="group bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-xs hover:shadow-xl transition flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-gray-100 aspect-4/3 overflow-hidden">
+                        <span class="absolute top-3 left-3 z-10 bg-black text-amber-400 text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Save $200</span>
+                        <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?q=80&w=800&auto=format&fit=crop" alt="Lagads Y26air" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">City Bike</span>
+                        <h3 class="font-bold text-xl text-gray-900 mt-1 mb-2">Lagads Y26air Electric Bike</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-2">Sleek urban styling paired with responsive handling, lightweight framing, and smooth daily cruising.</p>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">Urban Commuter</span>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded font-medium">Fast Charge</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-gray-100 mt-4">
+                    <div>
+                        <span class="text-xs text-gray-400 line-through block">$1,099.00</span>
+                        <span class="text-xl font-black text-gray-900">$899.00</span>
+                    </div>
+                    <button onclick="addToCart('Lagads Y26air Electric Bike', 899)" class="bg-black hover:bg-amber-500 hover:text-black text-white font-bold px-5 py-3 rounded-xl transition text-sm cursor-pointer">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Specs Banner / Why Choose -->
+    <section id="features" class="bg-gray-900 text-white py-20 my-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-amber-400 font-bold tracking-widest uppercase text-xs block mb-3">Superior Engineering</span>
+                    <h2 class="text-3xl sm:text-4xl font-black tracking-tight mb-6">Designed to Conquer Every Single Road Condition</h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Whether you are navigating busy metropolitan traffic or handling muddy trails, sandy paths, and steep mountain inclines, our e-bikes deliver uncompromised torque and reliable hydraulic stability.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-3xl font-black text-amber-400 mb-1">1000W</h4>
+                            <p class="text-sm text-gray-400">High-speed brushless motor options for maximum climbing power.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-3xl font-black text-amber-400 mb-1">80KM</h4>
+                            <p class="text-sm text-gray-400">Extended range capability via pedal assist mode.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop" alt="Electric Bike Riding" class="rounded-2xl shadow-2xl object-cover w-full h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white border-t border-gray-200 text-gray-700 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <a href="#" class="text-2xl font-black tracking-tighter uppercase text-black flex items-center gap-1.5 mb-4">
+                        <i class="fa-solid fa-bolt text-amber-500"></i> LAGADS<span class="text-amber-500">RIDER</span>
+                    </a>
+                    <p class="text-sm text-gray-500 leading-relaxed">
+                        Empowering your daily commute and weekend adventures with high-grade electric bikes and top-tier customer service.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#" class="hover:text-amber-600 transition">All Products</a></li>
+                        <li><a href="#" class="hover:text-amber-600 transition">Warranty Policy</a></li>
+                        <li><a href="#" class="hover:text-amber-600 transition">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-amber-600 transition">Support Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Warehouse Location</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-2">
+                        8/40 Brodie Street, Rydalmere NSW 2116, Australia
+                    </p>
+                    <p class="text-sm text-gray-500">Mon - Sat: 9:00 AM - 6:30 PM (Sydney)</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 uppercase text-sm tracking-wider">Contact & Support</h4>
+                    <p class="text-sm text-gray-500 mb-2">Email:</p>
+                    <a href="mailto:service@lagadsrider.com" class="text-amber-600 font-semibold text-sm hover:underline">service@lagadsrider.com</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500">
+                <p>&copy; 2026 LAGADS Rider. All rights reserved.</p>
+                <div class="flex gap-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-black">Privacy Policy</a>
+                    <a href="#" class="hover:text-black">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple Cart Drawer Modal -->
+    <div id="cart-drawer" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs hidden transition-opacity">
+        <div class="absolute right-0 top-0 h-full w-full max-w-md bg-white shadow-2xl flex flex-col">
+            <div class="p-6 border-b border-gray-100 flex items-center justify-between">
+                <h3 class="font-extrabold text-lg text-gray-900">Your Shopping Cart</h3>
+                <button onclick="toggleCart()" class="text-gray-400 hover:text-black text-xl font-bold cursor-pointer">&times;</button>
+            </div>
+            <div id="cart-items" class="p-6 flex-1 overflow-y-auto space-y-4">
+                <p class="text-gray-500 text-sm text-center py-8">Your cart is empty.</p>
+            </div>
+            <div class="p-6 border-t border-gray-100 bg-gray-50">
+                <div class="flex justify-between items-center mb-4">
+                    <span class="font-bold text-gray-700">Subtotal:</span>
+                    <span id="cart-total" class="font-black text-xl text-gray-900">$0.00</span>
+                </div>
+                <button onclick="alert('Checkout simulation complete! Thank you for shopping with LAGADS Rider.')" class="w-full bg-amber-500 hover:bg-amber-400 text-black font-extrabold py-4 rounded-xl transition text-center uppercase text-sm tracking-wide cursor-pointer shadow-md">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let cart = [];
+
+        function toggleCart() {
+            const drawer = document.getElementById('cart-drawer');
+            drawer.classList.toggle('hidden');
+        }
+
+        function addToCart(name, price) {
+            cart.push({ name, price });
+            updateCartUI();
+            toggleCart();
+        }
+
+        function updateCartUI() {
+            const badge = document.getElementById('cart-badge');
+            const itemsContainer = document.getElementById('cart-items');
+            const totalElement = document.getElementById('cart-total');
+
+            badge.textContent = cart.length;
+
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = '<p class="text-gray-500 text-sm text-center py-8">Your cart is empty.</p>';
+                totalElement.textContent = '$0.00';
+                return;
+            }
+
+            let total = 0;
+            itemsContainer.innerHTML = '';
+            cart.forEach((item, index) => {
+                total += item.price;
+                itemsContainer.innerHTML += `
+                    <div class="flex justify-between items-center bg-gray-50 p-4 rounded-xl border border-gray-100">
+                        <div>
+                            <h5 class="font-bold text-sm text-gray-900">${item.name}</h5>
+                            <span class="text-xs text-gray-500">$${item.price.toFixed(2)}</span>
+                        </div>
+                        <button onclick="removeFromCart(${index})" class="text-red-500 hover:text-red-700 text-xs font-bold cursor-pointer">Remove</button>
+                    </div>
+                `;
+            });
+
+            totalElement.textContent = `$${total.toFixed(2)}`;
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCartUI();
+        }
+    </script>
+</body>
+</html>
