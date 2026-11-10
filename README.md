@@ -3,7 +3,7 @@ markdown
 
 A clean, modern showcase website for electric bikes built with plain HTML and CSS. This repository is equipped with an automated CI/CD pipeline for instant global deployment.
 
-![Project Banner](https://unsplash.com)
+![Project Banner](https://github.com/bameoniel-art/ebike/Project-Banner.jpg)
 
 ---
 
